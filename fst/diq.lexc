@@ -25,6 +25,36 @@ Postpositions ;
 Prepositions ;
 IJ ;
 Pronouns ;
+Prefixes ; 
+Verbs ;
+Adverbs ;
+Determiners ;
+DET-DEICTIC ;
+
+LEXICON DET-DEICTIC
+
+no%<det%>%<dem%>%<p3%>%<m%>%<sg%>%<dir%>%<near%>:no # ;
+o%<det%>%<dem%>%<p3%>%<m%>%<sg%>%<dir%>%<far%>:o # ;
+nê%<det%>%<dem%>%<p3%>%<m%>%<sg%>%<obl%>%<near%>:nê # ;
+ê%<det%>%<dem%>%<p3%>%<m%>%<sg%>%<obl%>%<far%>:ê # ;
+
+na%<det%>%<dem%>%<p3%>%<f%>%<sg%>%<near%>:na # ;
+a%<det%>%<dem%>%<p3%>%<f%>%<sg%>%<far%>:a # ;
+
+nê%<det%>%<dem%>%<p3%>%<mf%>%<pl%>%<near%>:nê # ;
+ê%<det%>%<dem%>%<p3%>%<mf%>%<pl%>%<far%>:ê # ;
+LEXICON DET-ITG
+%<det%>%<itg%>: # ;
+
+LEXICON DET-QNT
+%<det%>%<qnt%>: # ;
+
+LEXICON ADV-ITG 
+
+%<adv%>%<itg%>: # ;
+
+LEXICON Prefixes 
+se%<prn%>%<itg%>:se+%> Verbs ;
 
 LEXICON Pronouns 
 prpers%<prn%>%<p3%>%<m%>%<sg%>%<dir%>%<near%>:no # ;
@@ -49,6 +79,12 @@ prpers%<prn%>%<p2%>%<mf%>%<pl%>:şıma # ;
 cı%<prn%>%<p3%>%<mf%>%<sg%>%<obl%>:cı # ;
 xu%<prn%>%<ref%>%<mf%>%<sp%>:xu # ;
 
+kam%<prn%>%<itg%>%<dir%>:kam # ;
+kam%<prn%>%<itg%>%<obl%>:kê # ;
+koti%<prn%>%<itg%>:koti # ;
+
+çıç%<prn%>%<f%>%<itg%>%<dir%>:çıçi # ;
+çıç%<prn%>%<m%>%<itg%>%<dir%>:çıç # ;
 LEXICON Postpositions 
 myan%<post%>:myan # ;
 sero%<post%>:sero # ;
@@ -127,3 +163,22 @@ zama:zama NM ;
 LEXICON Adjectives
 
 gırd:gırd A ;
+
+LEXICON Verbs 
+
+a:a # ;
+
+LEXICON Adverbs 
+koti:koti ADV-ITG ;
+kınga:kınga ADV-ITG ;
+key:key ADV-ITG ;
+çend:çend ADV-ITG ;
+çıçi% rê:çiçî% rê ADV-ITG ; 
+sênin:sênin ADV-ITG ;
+çı% waxt:çı% waxt ADV-ITG ;
+qandê% çıçi:qandê% çıçi ADV-ITG ;
+
+LEXICON Determiners
+çend:çend DET-QNT ;
+çend:çend DET-ITG ;
+kam:kam DET-ITG ;
