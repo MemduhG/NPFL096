@@ -1,10 +1,12 @@
 Alphabet
 a b c d e f g h i j k l m n o p q r s t u v w x y z ş ı ğ û ê
-A B C D E F G H İ J K L M N O P Q R S T U V W X Y Z Ş I Ğ Û Ê ;
+A B C D E F G H İ J K L M N O P Q R S T U V W X Y Z Ş I Ğ Û Ê 
+%>:0 %{Y%}:0 %{Y%}:y
+%{ê%}:ê %{ê%}:y ;
 
 Sets
 
-Vowel = a e ;
+Vowel = a e o i ı û ê u;
 
 Rules
 
@@ -13,3 +15,9 @@ Rules
 
 "i to y after vowel"
 i:y <=> Vowel: %>: _ ;
+
+"ê to y after vowel"
+%{ê%}:y <=> Vowel: %>: _ ;
+
+"ê to y after vowel"
+%{Y%}:y <=> Vowel: %>: _ ;

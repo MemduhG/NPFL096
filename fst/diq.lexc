@@ -1,6 +1,7 @@
 Multichar_Symbols
 
 %<n%>                ! Noun
+%<f%>                ! Feminine
 %<m%>                ! Masculine
 %<sg%>               ! Singular
 %<dir%>              ! Direct case
@@ -10,57 +11,98 @@ Multichar_Symbols
 %<ezs%>              ! Subordinated Ezafe
 %<post%>             ! Postposition
 %<pr%>               ! Preposition
+%<ij%>               ! Interjection
 
 %>                   ! Morpheme boundary
 %{Y%}
+%{ê%}
 
 LEXICON Root
 
-Nouns ;
+Nouns ; 
 Adjectives ;
 Postpositions ;
 Prepositions ;
+IJ ;
+Pronouns ;
+
+LEXICON Pronouns 
+prpers%<prn%>%<p3%>%<m%>%<sg%>%<dir%>%<near%>:no # ;
+prpers%<prn%>%<p3%>%<m%>%<sg%>%<dir%>%<far%>:o # ;
+prpers%<prn%>%<p3%>%<m%>%<sg%>%<obl%>%<near%>:ney # ;
+prpers%<prn%>%<p3%>%<m%>%<sg%>%<obl%>%<far%>:ey # ;
+prpers%<prn%>%<p3%>%<f%>%<sg%>%<dir%>%<near%>:na # ;
+prpers%<prn%>%<p3%>%<f%>%<sg%>%<dir%>%<far%>:a # ;
+prpers%<prn%>%<p3%>%<f%>%<sg%>%<obl%>%<near%>:nay # ;
+prpers%<prn%>%<p3%>%<f%>%<sg%>%<obl%>%<far%>:ay # ;
+prpers%<prn%>%<p3%>%<pl%>%<dir%>%<near%>:nê # ;
+prpers%<prn%>%<p3%>%<pl%>%<dir%>%<far%>:ê # ;
+prpers%<prn%>%<p3%>%<pl%>%<obl%>%<near%>:ninan # ;
+prpers%<prn%>%<p3%>%<pl%>%<obl%>%<far%>:inan # ;
+prpers%<prn%>%<p1%>%<mf%>%<sg%>%<dir%>:ez # ;
+prpers%<prn%>%<p1%>%<mf%>%<sg%>%<obl%>:min # ;
+prpers%<prn%>%<p1%>%<mf%>%<pl%>:ma # ;
+prpers%<prn%>%<p2%>%<mf%>%<sg%>%<dir%>:tı # ;
+prpers%<prn%>%<p2%>%<mf%>%<sg%>%<obl%>:to # ;
+prpers%<prn%>%<p2%>%<mf%>%<pl%>:şıma # ;
+
+cı%<prn%>%<p3%>%<mf%>%<sg%>%<obl%>:cı # ;
+xu%<prn%>%<ref%>%<mf%>%<sp%>:xu # ;
 
 LEXICON Postpositions 
-myan:myan%<post%> # ;
-sero:sero%<post%> # ;
-het:het%<post%> # ;
-kışt:kışt%<post%> # ;
-zere:zere%<post%> # ;
-ver:ver%<post%> # ;
-pey:pey%<post%> # ;
+myan%<post%>:myan # ;
+sero%<post%>:sero # ;
+het%<post%>:het # ;
+kışt%<post%>:kışt # ;
+zere%<post%>:zere # ;
+ver%<post%>:ver # ;
+pey%<post%>:pey # ;
 
 LEXICON Prepositions 
-pey:pey%<pr%> # ;
-qandê:qandê%<pr%> # ;
-bê:bê%<pr%> # ;
-a:a%<pr%> # ;
+pey%<pr%>:pey # ;
+qandê%<pr%>:qandê # ;
+bê%<pr%>:bê # ;
+a%<pr%>:a # ;
 
 LEXICON Clitics
-ra:ra%<post%> # ;
-rê:rê%<post%> # ;
-ro:ro%<post%> # ;
-a:a%<post%> # ;
-da:da%<post%> # ;
+ra%<post%>:ra # ;
+rê%<post%>:rê # ;
+ro%<post%>:ro # ;
+a%<post%>:a # ;
+da%<post%>:da # ;
 
 LEXICON N-PL
 %<dir%>:%>i # ;
 %<obl%>:%>an # ;
 %<loc%>: # ;
 
+LEXICON M-EZA 
+%<ezd%>:%>%{Y%}o # ;
+%<ezg%>:%>%{ê%} # ;
+%<ezs%>:%>dê # ;
+
 LEXICON NM 
 
 %<n%>%<m%>%<sg%>%<dir%>: # ;  
+%<n%>%<m%>%<sg%>%<dir%>: M-EZA ;  
 %<n%>%<m%>%<sg%>%<dir%>%<ind%>:%>ê # ;   
-%<n%>%<m%>%<sg%>%<dir%>%<ind%>:%>ên # ;   ! SEND TO EZA 
+%<n%>%<m%>%<sg%>%<dir%>%<ind%>:%>ên # ;   
+%<n%>%<m%>%<sg%>%<dir%>%<ind%>:%>ên M-EZA ;   
 %<n%>%<m%>%<sg%>%<obl%>:%>i # ;  
 %<n%>%<m%>%<sg%>%<loc%>: # ;  
 %<n%>%<m%>%<pl%>: N-PL ;
 
+LEXICON F-EZA 
+%<ezd%>:%>%{Y%}a # ;
+%<ezg%>:%>%{Y%}a # ;
+%<ezs%>:%>da # ;
+
 LEXICON NF
 %<n%>%<f%>%<sg%>%<dir%>: # ;   
+%<n%>%<f%>%<sg%>%<dir%>: F-EZA ;   
 %<n%>%<f%>%<sg%>%<dir%>%<ind%>:%>ê # ;   
-%<n%>%<f%>%<sg%>%<dir%>%<ind%>:%>ên # ;   ! SEND TO EZA 
+%<n%>%<f%>%<sg%>%<dir%>%<ind%>:%>ên # ;   
+%<n%>%<f%>%<sg%>%<dir%>%<ind%>:%>ên F-EZA ; 
 %<n%>%<f%>%<sg%>%<obl%>: # ;   
 %<n%>%<f%>%<sg%>%<obl%>:%>er # ;  
 %<n%>%<f%>%<sg%>%<loc%>:%>i # ;    
@@ -71,6 +113,10 @@ LEXICON A
 %<adj%>%<f%>%<sg%>:%>ı # ;
 %<adj%>%<f%>%<pl%>:%>i # ;
 %<adj%>%<m%>%<pl%>:%>i # ;
+
+LEXICON IJ
+way%<ij%>:way # ;
+oy%<ij%>:oy # ;
 
 LEXICON Nouns 
 
