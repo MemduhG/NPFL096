@@ -17,6 +17,11 @@ Multichar_Symbols
 %{Y%}
 %{ê%}
 
+@P.POL.NEG@
+@R.POL.NEG@
+@P.MOOD.SUBJ@
+@R.MOOD.SUBJ@
+
 LEXICON Root
 
 Nouns ; 
@@ -30,6 +35,8 @@ Verbs ;
 Adverbs ;
 Determiners ;
 DET-DEICTIC ;
+Verbs ;
+
 
 LEXICON DET-DEICTIC
 
@@ -54,7 +61,9 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: # ;
 
 LEXICON Prefixes 
-se%<prn%>%<itg%>:se+%> Verbs ;
+se%<prn%>%<itg%>+:se%> Verbs ;
+@P.POL.NEG@:@P.POL.NEG@ne Verbs ;
+@P.MOOD.SUBJ@:@P.MOOD.SUBJ@bı Verbs ;
 
 LEXICON Pronouns 
 prpers%<prn%>%<p3%>%<m%>%<sg%>%<dir%>%<near%>:no # ;
@@ -85,6 +94,11 @@ koti%<prn%>%<itg%>:koti # ;
 
 çıç%<prn%>%<f%>%<itg%>%<dir%>:çıçi # ;
 çıç%<prn%>%<m%>%<itg%>%<dir%>:çıç # ;
+
+cı%<prn%>%<p3%>%<mf%>%<sg%>%<obl%>+dı%<post%>:tey # ;
+prpers%<prn%>%<p3%>%<mf%>%<sg%>%<obl%>+ro%<post%>:pıro # ;
+prpers%<prn%>%<p3%>%<mf%>%<sg%>%<loc%>:pa # ;
+
 LEXICON Postpositions 
 myan%<post%>:myan # ;
 sero%<post%>:sero # ;
@@ -106,6 +120,37 @@ rê%<post%>:rê # ;
 ro%<post%>:ro # ;
 a%<post%>:a # ;
 da%<post%>:da # ;
+
+LEXICON COP-CLT
++biyene%<cop%>%<pri%>%<p1%>%<sg%>:%>%{y%}an # ;
++biyene%<cop%>%<pri%>%<p2%>%<sg%>%<m%>:%>%{y%}ê # ;
++biyene%<cop%>%<pri%>%<p2%>%<sg%>%<f%>:%>%{y%}a # ;
++biyene%<cop%>%<pri%>%<p3%>%<sg%>%<m%>:%>%{y%}o # ;
++biyene%<cop%>%<pri%>%<p3%>%<sg%>%<f%>:%>%{y%}a # ;
++biyene%<cop%>%<pri%>%<pl%>:%>%{y%}i # ;
+
+LEXICON COP 
+
+biyene%<cop%>%<past%>%<p1%>%<sg%>:viyan # ;
+biyene%<cop%>%<past%>%<p2%>%<sg%>%<m%>:vi # ;
+biyene%<cop%>%<past%>%<p2%>%<sg%>%<f%>:viya # ;
+biyene%<cop%>%<past%>%<p3%>%<sg%>%<m%>:vı # ;
+biyene%<cop%>%<past%>%<p3%>%<sg%>%<f%>:vi # ;
+biyene%<cop%>%<past%>%<pl%>:vi # ;
+
+est%<vbhaver%>%<past%>%<p1%>%<sg%>:biyan # ;
+est%<vbhaver%>%<past%>%<p2%>%<sg%>%<m%>:bi # ;
+est%<vbhaver%>%<past%>%<p2%>%<sg%>%<f%>:biya # ;
+est%<vbhaver%>%<past%>%<p3%>%<sg%>%<m%>:bı # ;
+est%<vbhaver%>%<past%>%<p3%>%<sg%>%<f%>:bi # ;
+est%<vbhaver%>%<past%>%<pl%>:bi # ;
+
+est%<vbhaver%>%<neg%>%<past%>%<p1%>%<sg%>:çınêviyan # ;
+est%<vbhaver%>%<neg%>%<past%>%<p2%>%<sg%>%<m%>:çınêvi # ;
+est%<vbhaver%>%<neg%>%<past%>%<p2%>%<sg%>%<f%>:çınêviya # ;
+est%<vbhaver%>%<neg%>%<past%>%<p3%>%<sg%>%<m%>:çınêvı # ;
+est%<vbhaver%>%<neg%>%<past%>%<p3%>%<sg%>%<f%>:çınêvi # ;
+est%<vbhaver%>%<neg%>%<past%>%<pl%>:çınêvi # ;
 
 LEXICON N-PL
 %<dir%>:%>i # ;
@@ -150,6 +195,30 @@ LEXICON A
 %<adj%>%<f%>%<pl%>:%>i # ;
 %<adj%>%<m%>%<pl%>:%>i # ;
 
+LEXICON V-PRES-ENDINGS
+%<p1%>%<sg%>:%>an # ;
+%<p1%>%<sg%>:%>a # ;
+%<p2%>%<sg%>%<m%>:%>ê # ;
+%<p2%>%<sg%>%<f%>:%>a # ;
+%<p3%>%<sg%>%<m%>:%>o # ;
+%<p3%>%<sg%>%<f%>:%>a # ;
+%<pl%>:%>ê # ;
+
+LEXICON V-SUBJ-ENDINGS
+%<p1%>%<sg%>:%>an # ;
+%<p2%>%<sg%>:%>ê # ;
+%<p3%>%<sg%>:%>o # ;
+%<pl%>:%>ê # ;
+
+LEXICON V
+%<pri%>en: V-PRES-ENDINGS;
+@R.POL.NEG@%<neg%>%<pri%>:@R.POL.NEG@en V-PRES-ENDINGS ;
+@R.MOOD.SUBJ@%<prs%>:@R.MOOD.SUBJ@ V-SUBJ-ENDINGS ;
+
+LEXICON IV
+%<v%>%<iv%>: V ;
+
+
 LEXICON IJ
 way%<ij%>:way # ;
 oy%<ij%>:oy # ;
@@ -164,9 +233,6 @@ LEXICON Adjectives
 
 gırd:gırd A ;
 
-LEXICON Verbs 
-
-a:a # ;
 
 LEXICON Adverbs 
 koti:koti ADV-ITG ;
@@ -182,3 +248,6 @@ LEXICON Determiners
 çend:çend DET-QNT ;
 çend:çend DET-ITG ;
 kam:kam DET-ITG ;
+
+LEXICON Verbs
+çin:çin IV ;
