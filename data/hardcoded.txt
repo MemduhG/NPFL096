@@ -1,0 +1,25 @@
+kes kes prn ind
+jew num
+ez ez prn p1 sg dir
+min ez prn p1 sg obl
+ma ma prn p1 pl
+şıma şıma prn p2 pl
+tı tı prn p2 sg dir
+to tı prn p2 sg obl
+no  no prn p3 sg m near dir
+o   no prn p3 sg m far dir
+ney no prn p3 sg m near obl
+ey  no prn p3 sg m far obl
+na  na prn p3 sg f near dir
+a   na prn p3 sg f far dir
+nay na prn p3 sg f near obl
+ay  na prn p3 sg f far obl
+nê    nê prn p3 pl near dir
+ê     nê prn p3 pl far dir
+ninan nê prn p3 pl near obl
+inan  nê prn p3 pl far obl
+cı cı prn ana obl
+coy cı prn ana obl
+cey cı prn ana obl
+cê cı prn ana obl
+xu xu prn ref
