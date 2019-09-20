@@ -1,5 +1,4 @@
 kes kes prn ind
-jew num
 ez ez prn p1 sg dir
 min ez prn p1 sg obl
 ma ma prn p1 pl
@@ -23,3 +22,58 @@ coy cı prn ana obl
 cey cı prn ana obl
 cê cı prn ana obl
 xu xu prn ref
+pıro pıro adv
+pa pa prn loc
+pê pê recp
+koti koti adv int
+kınga kınga adv int
+kê kê prn int
+çend çend adv int
+sênin sênin adv int
+çıçi çıçi prn int
+key key adv int
+çıç çıç prn int
+çıçi_rê çiçi_rê adv int
+no no det m near dir
+o no det m sg far dir
+nê no det m sg near obl
+ê no det m sg far obl
+na na det f sg near
+a na det f sg far
+nê nê det pl near
+ê ê det pl far
+jew jew num
+dıdı dıdı num
+hirê hirê num
+çehar çehar num
+panj panj num
+şeş şeş num
+hewt hewt num
+heşt heşt num
+new new num
+des des num
+desûjew desûjew num
+desûdıdı desûdıdı num
+desûhirê desûhirê num
+desûçehar desûçehar num
+desûpanj desûpanj num
+desûşeş desûşeş num
+desûhewt desûhewt num
+desûheşt desûheşt num
+desûnew desûnew num
+vist vist num
+hirıs hirıs num
+çewres çewres num
+jandes jandes num
+dûwês dûwês num
+hirês hirês num
+çarrês çarrês num
+pancês pancês num
+şiyês şiyês num
+hewtês hewtês num
+heştês heştês num
+newês newês num
+çıniyo çıniyo num
+se se num
+hazar hazar num
+mılyon mılyon num
