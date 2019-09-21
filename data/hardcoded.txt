@@ -77,3 +77,24 @@ newês newês num
 se se num
 hazar hazar num
 mılyon mılyon num
+estan est vbexist pres p1 sg
+estê est vbexist pres p2 sg m
+esta est vbexist pres p2 sg f
+esto est vbexist pres p3 sg m
+esta est vbexist pres p3 sg f
+estê est vbexist pres p3 pl
+biyan est vbexist past p1 sg
+bi est vbexist past p2 sg m
+biya est vbexist past p2 sg f
+bi est vbexist past p3 sg m
+bi est vbexist past p3 sg f
+bi est vbexist past p3 pl
+bivo est vbexist subj p3 sg
+beno bi v pres p3 sg m
+viyan bi v past p1 sg
+vi bi v past p2 sg m
+viya bi v past p2 sg f
+vi bi v past p3 sg m
+vi bi v past p3 sg f
+vi bi v past p3 pl
+vo bi v subj p3 sg
